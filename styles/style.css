@@ -39,6 +39,7 @@
   font-size: 102px;
   flex-direction: column;
   align-self: center;
+  z-index: 3;
 
 }
 
@@ -51,11 +52,13 @@
   position: absolute;
   bottom: 30px;
   left: 64px;
+  z-index: 3;
 }
 
 .header-link {
   text-decoration: none;
   color: #2f80ed;
+  z-index: 2;
 }
 
 
