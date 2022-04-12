@@ -5,6 +5,10 @@
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
+a:hover {
+  color: green;
+}
+
 .header {
   min-height: 600px;
   max-height: 756px;
@@ -13,10 +17,6 @@
   position: relative;
   background-color: #f2f2f2;
 
-}
-
-.border {
-  border: 1px solid #6e6e6e;
 }
 
 .logo {
@@ -28,12 +28,12 @@
   position: absolute;
   top: 30px;
   left: 64px;
-  color: #000;
 }
 
-.title {
+.header__title {
   width: 730px;
   line-height: 96px;
+  margin: 0;
   margin-left: 64px;
   font-weight: bold;
   font-size: 102px;
@@ -43,11 +43,12 @@
 
 }
 
-.subtitle {
+.header__subtitle {
 
   font-size: 18px;
   line-height: 25px;
   width: 388px;
+  margin: 0;
   font-weight: normal;
   position: absolute;
   bottom: 30px;
@@ -55,70 +56,60 @@
   z-index: 3;
 }
 
-.header-link {
+.header__link {
   text-decoration: none;
   color: #2f80ed;
+  margin: 0;
   z-index: 2;
 }
 
 
 
 
-.main-illustration {
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 2;
-
+  object-fit: contain;
+  object-position: bottom right;
 }
 
-.square-pic {
+.header__square-pic {
   background-color: #2f80ed;
   width: 568px;
   height: 568px;
   position: absolute;
   top: 64px;
   right: 0;
-
 }
 
 .description {
   min-width: 784px;
   display: flex;
   justify-content: center;
-}
-
-.content__description {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .two-columns {
   width: 80%;
-
-
-
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .two-columns__brief {
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.two-columns__title {
   width: 175px;
   font-size: 18px;
   line-height: 1.2;
+  margin: 0;
   color: #2f80ed;
   font-weight: normal;
-  margin: 0;
-
 
 }
+
 
 .two-columns__main-text {
   width: 80%;
@@ -179,24 +170,15 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
-
-}
-
-.digital__table {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .table__cell {
   display: flex;
   flex-direction: column;
-
-}
-
-.table__cell_digital {
   width: 250px;
   margin-top: 60px;
 }
-
 
 .table__heading {
   margin: 0;
@@ -211,15 +193,11 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.table__text_padding {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .feynman {
-  height: 890px;
-
+  min-height: 890px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -228,7 +206,7 @@
 
 }
 
-.feynman_title {
+.feynman__title {
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
@@ -239,7 +217,7 @@
   z-index: 1;
 }
 
-.feynman_subtitle {
+.feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -248,7 +226,8 @@
   z-index: 1;
 }
 
-.feynman_link {
+.feynman__link {
+  margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -260,7 +239,7 @@
   text-decoration: none;
 }
 
-.feynman_img {
+.feynman__img {
   width: 867px;
   height: 637px;
   position: absolute;
@@ -272,7 +251,7 @@
 
 
 .kaufman {
-  background-color: #000;
+  background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -317,6 +296,7 @@
 }
 
 .kaufman_triangle {
+  background-image: url(/images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
   position: absolute;
@@ -327,19 +307,17 @@
 
 
 .footer {
-  background-color: #000;
+  background-color: #1f1f1f;
   min-height: 350px;
   color: #FFFFFF;
 }
 
-
-
 .footer__columns {
   width: 90%;
-  height: 250px;
+  min-height: 250px;
   margin: auto;
   padding-top: 60px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
 
@@ -354,20 +332,15 @@
   justify-content: space-between;
 }
 
-.logo__place_footer {
-  stroke: #FFFFFF;
-  fill: #FFFFFF;
-}
+.logo_place_footer {}
 
-.filter-white {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(102%) contrast(102%);
 
-}
 
 .footer__author {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
   margin-top: 18px;
   margin-bottom: 18px;
 }
@@ -395,10 +368,17 @@
 
 }
 
-.footer__column_links {
+.footer__column-links {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+
+}
+
+.footer__column-links ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
 
 }
 
