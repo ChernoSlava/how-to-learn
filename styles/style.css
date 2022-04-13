@@ -5,9 +5,7 @@
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-a:hover {
-  color: green;
-}
+
 
 .header {
   min-height: 600px;
@@ -63,7 +61,9 @@ a:hover {
   z-index: 2;
 }
 
-
+.hover-link:hover {
+  color: green;
+}
 
 
 .header__main-illustration {
@@ -136,7 +136,7 @@ a:hover {
 
 }
 
-.digital {
+.digits {
   display: flex;
   flex-direction: column;
   align-items: center;
