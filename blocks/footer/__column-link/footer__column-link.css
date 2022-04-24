@@ -3,5 +3,9 @@
   margin: 0;
   margin-top: 16px;
   text-decoration: none;
+  transition: opacity 0.5s linear 0s;
+}
 
+.footer__column-link:hover {
+  opacity: 30%;
 }
