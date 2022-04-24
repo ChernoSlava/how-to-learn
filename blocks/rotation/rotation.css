@@ -1,0 +1,13 @@
+@keyframes move {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.rotation {
+  animation: move 20s linear 0s infinite normal backwards;
+}
