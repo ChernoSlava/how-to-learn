@@ -4,8 +4,26 @@
   max-width: 388px;
   margin: 0;
   font-weight: normal;
-  position: absolute;
-  bottom: 30px;
-  left: 64px;
   z-index: 3;
+  font-family: 'Super-italic';
+  font-style: italic;
+  margin-left: 64px;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header__subtitle {
+    margin-left: 24px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__subtitle {
+    margin-left: 24px;
+    font-size: 14px;
+    line-height: 15px;
+  }
 }
