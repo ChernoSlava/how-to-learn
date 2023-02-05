@@ -1,0 +1,24 @@
+.resources {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.resources__logo-zone {
+  width: 1100px;
+  margin: 80px auto 217px;
+  display: flex;
+  justify-content: space-between;
+}
+.resources__link {
+  text-align: center;
+  transition: opacity 0.5s linear 0s;
+}
+
+.resources__link:hover {
+  opacity: 30%;
+}
+.resources__logo{
+  width: 270px;
+  height: 38px;
+}

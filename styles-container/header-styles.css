@@ -1,0 +1,71 @@
+.header {
+  min-height: 600px;
+  max-height: 756px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.header__title {
+  max-width: 730px;
+  line-height: 96px;
+  margin: 0;
+  margin-left: 64px;
+  font-weight: bold;
+  font-size: 102px;
+  z-index: 3;
+
+}
+.header__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 388px;
+  margin: 0;
+  font-weight: normal;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 3;
+}
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+  margin: 0;
+  z-index: 2;
+  transition: opacity 0.5s linear 0s;
+}
+
+.header__link:hover {
+  opacity: 30%;
+}
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  object-fit: contain;
+  object-position: bottom right;
+}
+.header__square-pic {
+  background: #2f80ed;
+  width: 568px;
+  height: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
+}
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
