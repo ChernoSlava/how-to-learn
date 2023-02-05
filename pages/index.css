@@ -1,13 +1,97 @@
-@import url(../vendor/normalize.css);
-@import url(../blocks/page/page.css);
-@import url(../blocks/rotation/rotation.css);
+/* @import url(../vendor/normalize.css); */
+/* @import url(../blocks/page/page.css);
+@import url(../blocks/rotation/rotation.css); */
 
-@import url(../blocks/header/header.css);
+/* @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__subtitle/header__subtitle.css);
 @import url(../blocks/header/__link/header__link.css);
 @import url(../blocks/header/__main-illustration/header__main-illustration.css);
-@import url(../blocks/header/__square-pic/header__square-pic.css);
+@import url(../blocks/header/__square-pic/header__square-pic.css); */
+
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: move 20s linear 0s infinite normal backwards;
+}
+
+
+.header {
+  min-height: 600px;
+  max-height: 756px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.header__title {
+  max-width: 730px;
+  line-height: 96px;
+  margin: 0;
+  margin-left: 64px;
+  font-weight: bold;
+  font-size: 102px;
+  z-index: 3;
+
+}
+.header__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 388px;
+  margin: 0;
+  font-weight: normal;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 3;
+}
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+  margin: 0;
+  z-index: 2;
+  transition: opacity 0.5s linear 0s;
+}
+
+.header__link:hover {
+  opacity: 30%;
+}
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  object-fit: contain;
+  object-position: bottom right;
+}
+.header__square-pic {
+  background: #2f80ed;
+  width: 568px;
+  height: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+}
+
 
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/logo_place_header.css);
