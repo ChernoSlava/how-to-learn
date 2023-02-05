@@ -1,23 +1,10 @@
 .header__main-illustration {
-  max-width: 765px;
-  max-height: 608px;
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   z-index: 2;
   object-fit: contain;
   object-position: bottom right;
-  align-self: flex-end;
-
-}
-
-@media screen and (max-width: 1300px) {
-  .header__main-illustration {
-    max-width: 500px;
-    max-height: 450px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .header__main-illustration {
-    max-width: 450px;
-    max-height: 300px;
-  }
 }

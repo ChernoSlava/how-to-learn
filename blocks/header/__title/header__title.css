@@ -1,5 +1,4 @@
 .header__title {
-  max-height: fit-content;
   max-width: 730px;
   line-height: 96px;
   margin: 0;
@@ -8,28 +7,4 @@
   font-size: 102px;
   z-index: 3;
 
-}
-
-@media screen and (max-width: 1300px) {
-  .header__title {
-    margin-left: 48px;
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header__title {
-    margin-left: 24px;
-    font-size: 30px;
-    line-height: 30px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .header__title {
-    margin-left: 26px;
-    font-size: 20px;
-    line-height: 20px;
-  }
 }
